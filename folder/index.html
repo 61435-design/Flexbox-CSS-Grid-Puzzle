@@ -19,14 +19,16 @@
             color: #555;
         }
         .puzzle {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
             max-width: 800px;
             margin: 20px auto;
         }
         .puzzle img {
-            width: 100%;
+            flex: 1 1 calc(25% - 20px);
+            max-width: calc(25% - 20px);
             height: auto;
             border: 2px solid #ccc;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
@@ -43,7 +45,7 @@
 </head>
 <body>
     <h1>Flexbox / CSS Grid Puzzle</h1>
-    <p>Here is my completed puzzle. One piece does not belong (marked below).</p>
+    <p>Here is my completed puzzle. One piece does not belong — clearly marked below.</p>
 
     <div class="puzzle">
         <img src="puzzle2_A.jpg" alt="Puzzle piece A">
@@ -62,7 +64,7 @@
 
     <div class="extra-piece">
         <h2>Extra piece (does not belong)</h2>
-        <img src="puzzle2_M.jpg" alt="Extra puzzle piece">
+        <img src="puzzle2_M.jpg" alt="Extra puzzle piece M">
     </div>
 </body>
 </html>
