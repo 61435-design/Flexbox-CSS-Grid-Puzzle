@@ -1,40 +1,53 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
 }
 
-h1 {
-    color: #333;
-}
-
-p {
-    color: #555;
-}
-
 .puzzle {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 10px;
-    max-width: 800px;
-    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
 }
 
 .puzzle img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.extra-piece {
-    margin-top: 30px;
-}
-
-.extra-piece img {
     width: 150px;
     height: auto;
-    border: 2px solid red;
+}
+
+.hidden-piece {
+    display: none; /* hides the odd piece */
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
