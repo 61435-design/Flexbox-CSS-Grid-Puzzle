@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox / CSS Grid Puzzle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .puzzle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .puzzle img {
+            flex: 1 1 calc(25% - 20px);
+            max-width: calc(25% - 20px);
+            height: auto;
+            border: 2px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .extra-piece {
+            margin-top: 30px;
+        }
+        .extra-piece img {
+            width: 150px;
+            height: auto;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox / CSS Grid Puzzle</h1>
+    <p>Here is my completed puzzle. One piece does not belong — clearly marked below.</p>
+
+    <div class="puzzle">
+        <img src="puzzle2_A.jpg" alt="Puzzle piece A">
+        <img src="puzzle2_B.jpg" alt="Puzzle piece B">
+        <img src="puzzle2_C.jpg" alt="Puzzle piece C">
+        <img src="puzzle2_D.jpg" alt="Puzzle piece D">
+        <img src="puzzle2_E.jpg" alt="Puzzle piece E">
+        <img src="puzzle2_F.jpg" alt="Puzzle piece F">
+        <img src="puzzle2_G.jpg" alt="Puzzle piece G">
+        <img src="puzzle2_H.jpg" alt="Puzzle piece H">
+        <img src="puzzle2_I.jpg" alt="Puzzle piece I">
+        <img src="puzzle2_J.jpg" alt="Puzzle piece J">
+        <img src="puzzle2_K.jpg" alt="Puzzle piece K">
+        <img src="puzzle2_L.jpg" alt="Puzzle piece L">
+    </div>
+
+    <div class="extra-piece">
+        <h2>Extra piece (does not belong)</h2>
+        <img src="puzzle2_M.jpg" alt="Extra puzzle piece M">
+    </div>
+</body>
+</html>
