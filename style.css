@@ -1,43 +1,31 @@
-/* General page styling */
 body {
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
 header {
-    background-color: #333;
+    background-color: #252030;
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
-header h1 {
-    margin: 0;
-}
-
-/* Puzzle grid */
 .puzzle {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 pieces per row */
-    gap: 0; /* no gaps between pieces */
-    width: 800px; /* fixed width so pieces align perfectly */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px; /* removes white lines between pieces */
+    width: 80%;
+    max-width: 800px;
     margin: 20px auto;
-    border: 3px solid #222;
 }
 
-/* Puzzle pieces */
 .puzzle img {
     width: 100%;
     height: auto;
-    display: block; /* removes inline whitespace */
-    margin: 0;
-    padding: 0;
-    border: none;
+    display: block;
 }
 
-/* Hide faulty piece */
 .hidden {
     display: none;
 }
