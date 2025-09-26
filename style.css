@@ -17,12 +17,12 @@ header h1 {
     margin: 0;
 }
 
-/* Puzzle grid setup */
+/* Puzzle grid */
 .puzzle {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 pieces per row */
-    gap: 0; /* no white lines between pieces */
-    max-width: 800px; /* adjust based on image sizes */
+    gap: 0; /* no gaps between pieces */
+    width: 800px; /* fixed width so pieces align perfectly */
     margin: 20px auto;
     border: 3px solid #222;
 }
@@ -31,7 +31,7 @@ header h1 {
 .puzzle img {
     width: 100%;
     height: auto;
-    display: block;  /* remove inline gaps */
+    display: block; /* removes inline whitespace */
     margin: 0;
     padding: 0;
     border: none;
