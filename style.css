@@ -13,8 +13,8 @@ header {
 
 .puzzle {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0px; /* removes white lines between pieces */
+    grid-template-columns: repeat(4, 1fr); /* 4 pieces per row */
+    gap: 0;
     width: 80%;
     max-width: 800px;
     margin: 20px auto;
